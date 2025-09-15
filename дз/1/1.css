@@ -1,0 +1,32 @@
+body {
+    background: #353333;
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #681dd8;
+    border: 7px solid #fff;
+    border-radius: 50px;
+    transform: translate(633px, -6px);
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #d86add;
+    border: 7px solid #fff;
+    border-radius: 50px;
+    transform: translate(840px, -42px);
+}
