@@ -1,28 +1,144 @@
+
 * {
-    display: block;
-    font-family: sans-serif;
-    margin: 10px;
-    font-weight: 550;
+    font-family: Roboto;
+    font-weight: 400;
 }
 
-h2 {
-    font-weight: 700;
+.wrapper {
+    width: 100%;
+    background: #000;
 }
+
+
+.container {
+    width: 1400px;
+    margin: 0px auto;
+    
+
+}
+
+.wrapper form {
+    border: none;
+    width: 650px;
+    display: block;
+}
+
+
+fieldset {
+    border: none;
+}
+
+label {
+    color: #4f4f4f;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.wrapper h2 {
+    text-align: center;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 input {
-    font-weight: normal;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    padding: 15px 10px;
+    background: #2c2420;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 200px;
+    transition: all 0.5s;
+}
+
+input:focus-visible {
+    width: 300px;
+    color: #b321bd;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+    color: #f61d1d;
+    opacity: 0.5;
+    
 }
 
 textarea {
-    resize: vertical;
+    resize: none;
+    font-size: 15px;
+    width: 96%;
+    height: 150px;
+    border: 1px solid #CECECE;
+    border-radius: 10px;
+    background: #2c2420;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+textarea:focus-visible {
+    color: #b321bd;
+    
 }
 
 button {
+    background: #e66b36;
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    float: right;
     cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0 0 0;
 }
 
-fieldset {
-    width: 500px;
-    border-radius: 15px;
-    border: 3px solid rgb(38, 152, 233);
+button:hover {
+    transform: scale(1.1);
 }
 
+.checkbox {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    cursor: pointer;
+    appearance: none;
+    position: absolute;
+    outline: none;
+    border: none;
+    position: relative;
+    padding-right: 50px;
+}
+
+
+.checkbox::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top: -14px;
+    right: 0;
+    bottom: 0;
+    left: 25px;
+}
+.checkbox:checked:after {
+    background: url(./form/images/check-icon.svg) no-repeat center, #e66b36;
+}
+
+span {
+    color: #e66b36
+}
