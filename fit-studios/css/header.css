@@ -1,0 +1,31 @@
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 15px 0;
+    border-bottom: 2px solid #625d5d66;
+    gap: 10px;
+}
+
+h5 {
+    color: #767373;
+    opacity: 0.7;
+    font-size: 12px;
+    text-align: right;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.header-number {
+    font-weight: 500;
+    float: right;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.header-number:hover {
+    color: #3596ed;
+}
+
