@@ -2,6 +2,8 @@ html {
     font-family: var(--font-family);
     font-weight: 400;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
@@ -11,10 +13,35 @@ body {
 }
 
 .container {
-    width:min(var(--container-width), 100% - var(--container-padding) *2);
+    width: min(var(--container-width), 100% - var(--container-padding) *2);
     padding: var(--container-padding);
     margin: 0 auto;
 }
+
+.text-regular,
+.text-light {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--main-color);
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.title-md {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
 
 a:focus-visible,
 button:focus-visible {

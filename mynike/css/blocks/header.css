@@ -8,6 +8,7 @@
     bottom: 0;
     background-color: var(--bg-color);
     transition: box-shadow var(--transition-time);
+    z-index: 1;
 }
 
 .header--fixed {
